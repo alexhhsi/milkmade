@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MilkMade Ice Cream</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+  <head>
+    <title>MilkMade Ice Cream</title>
+    <%= render :partial => 'shared/includes' %>
+  </head>
+  <body>
 
-<%= yield %>
+  <% if notice %><p id="notice"><%= notice %></p><% end %>
+  <% if alert %><p id="alert"><%= alert %></p><% end %>
 
-</body>
+  <%= yield %>
+
+  </body>
 </html>
