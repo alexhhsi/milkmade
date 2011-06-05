@@ -1,4 +1,9 @@
 Milkmade::Application.routes.draw do
+  
+  root :to => "members#index"
+  
+  resources :members
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
