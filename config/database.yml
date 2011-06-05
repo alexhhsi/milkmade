@@ -11,8 +11,8 @@ development:
   reconnect: false
   database: milkmade_development
   pool: 5
-  username: root
-  password:
+  username: milkmade
+  password: m1lkm@de
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
