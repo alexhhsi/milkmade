@@ -1,5 +1,11 @@
 Milkmade::Application.routes.draw do
   
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
   root :to => "members#index"
   
   resources :members
