@@ -13,10 +13,10 @@
 ActiveRecord::Schema.define(:version => 20110605185216) do
 
   create_table "members", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "username"
+    t.string   "first_name", :limit => 25,                 :null => false
+    t.string   "last_name",  :limit => 50,                 :null => false
+    t.string   "email",                    :default => "", :null => false
+    t.string   "username",   :limit => 25
     t.integer  "zip_code"
     t.datetime "created_at"
     t.datetime "updated_at"
